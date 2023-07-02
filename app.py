@@ -30,7 +30,7 @@ azuki = Image.open("azuki .png")
 with st.container():
     st.subheader("This is fitness coin test")
     st.title("our mission is to empower community through fitness")
-    st.write("[Click here to learn more >](https://opensea.io)")
+    st.write("[Click here to learn more >](https://www.youtube.com/watch?v=dQw4w9WgXcQ)")
 
 with st.container():
     st.write("---")
