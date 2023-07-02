@@ -27,7 +27,7 @@ def get_user_data():
 
 def get_user_data2():
     client_id = "109977"
-    redirect_uri = "https://fitcoin.onrender.com/"
+    redirect_uri = "https://fitcoin.onrender.com"
     scope = "activity:read_all"  # Replace with the desired scope(s) from Strava API
 
     # Construct the authentication URL
