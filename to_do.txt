@@ -1,0 +1,28 @@
+
+To connect a user's Strava account to your website, you can follow these steps:
+
+Implement the OAuth 2.0 authentication flow:
+
+Set up a client-side authentication flow using JavaScript to redirect the user to the Strava authorization page.
+Once the user grants permission, Strava will redirect them back to your website with an authorization code.
+Retrieve the authorization code:
+
+On your website's server-side, receive the authorization code passed as a query parameter from the Strava redirect.
+Validate and securely store the authorization code for further processing.
+Exchange the authorization code for an access token:
+
+Use the authorization code to make a server-side request to Strava's token endpoint.
+Include your client ID, client secret, and redirect URI in the request.
+Receive the access token and other relevant information from the token response.
+Store the access token:
+
+Store the access token securely in your database or session storage, associated with the user who authenticated with Strava.
+This will allow you to make API requests on behalf of the user in the future.
+Integrate with the Strava API:
+
+With the user's access token, you can make API requests to retrieve data from their Strava account.
+Use the access token in the Authorization header of your API requests.
+Implement the desired functionality:
+
+Utilize the Strava API endpoints to fetch and display the user's activities, profile information, or any other relevant data.
+Integrate the data seamlessly into your website's user interface.
